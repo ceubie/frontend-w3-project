@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Creation</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="bootstrap.bundle.min.js"></script>
+  <style>
+    .form-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .form-group img {
+      max-width: 100%;
+      height: auto;
+    }
+    .text-shadow {
+          text-shadow: 6px 6px 6px rgba(0, 0, 0, 1); 
+        }
+  </style>
+</head>
+<body>
+  <nav id="navigation "class="navbar navbar-expand-lg navbar-light bg-danger p-4">
+    <a class="navbar-brand" id="brandName" href="home.html">
+        <img src="logo.png" class="shadow-" width="75">
+        <label for="brandName" href="home.html" class="text-light text-shadow">Performance Solutions</label>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-center" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item p-1">
+          <a class="nav-link active" href="home.html">Home</a>
+        </li>
+        <li class="nav-item p-1">
+          <a class="nav-link" href="taskdashboard.html">TaskDashboard</a>
+        </li>
+        <li class="nav-item p-1">
+          <a class="nav-link" href="taskcreation.html">TaskCreater</a>
+        </li>
+        <li class="nav-item p-1">
+            <a href="login.html"><button class="btn btn-secondary btn-small">
+                Sign In
+            </button></a>
+        </li>
+        <li class="nav-item p-1">
+           <a href="register.html">
+           <button class="btn btn-dark btn-small"> Register </button>
+            </a> 
+        </li>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container my-5 form-container">
+    <h2 class="mb-4 text-center">Create New Task</h2>
+    <form>
+      <div class="mb-3">
+        <label for="taskName" class="form-label">Task Name</label>
+        <input type="text" class="form-control" id="taskName" placeholder="Enter task name" required>
+      </div>
+      <div class="mb-3">
+        <label for="taskDescription" class="form-label">Task Description</label>
+        <textarea class="form-control" id="taskDescription" rows="3" placeholder="Enter task description" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="taskTime" class="form-label">Time</label>
+        <input type="time" class="form-control" id="taskTime" required>
+      </div>
+      <div class="mb-3">
+        <label for="taskImage" class="form-label">Task Image</label>
+        <input type="file" class="form-control" id="taskImage">
+      </div>
+      <div class="mb-3">
+        <label for="taskPriority" class="form-label">Priority</label>
+        <select class="form-select" id="taskPriority">
+          <option selected>Select priority</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="taskDay" class="form-label">Day</label>
+        <select class="form-select" id="taskDay">
+          <option selected>Select category</option>
+          <option value="other">Sunday</option>
+          <option value="work">Monday</option>
+          <option value="other">Tuesday</option>
+          <option value="other">Wednesday</option>
+          <option value="other">Thurdsay</option>
+          <option value="other">Friday</option>
+          <option value="personal">Saturday</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="taskCategory" class="form-label">Category</label>
+        <select class="form-select" id="taskCategory">
+          <option selected>Select category</option>
+          <option value="other">Wake Up</option>
+          <option value="work">Work</option>
+          <option value="other">Breakfast</option>
+          <option value="other">Lunch</option>
+          <option value="other">Dinner</option>
+          <option value="other">Protein Shake</option>
+          <option value="personal">Personal</option>
+          <option value="exercise">Exercise</option>
+          <option value="other">Sleep</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-danger">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

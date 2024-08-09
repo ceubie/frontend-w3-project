@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Dashboard</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script scr="bootstrap.min.js"></script>
+  <style>
+    .accordion-button {
+      background: none;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .accordion-button img {
+      width: 50%; 
+      height: auto;
+    }
+
+    .accordion-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+    .text-shadow {
+          text-shadow: 6px 6px 6px rgba(0, 0, 0, 1); 
+        }
+  </style>
+</head>
+<body>
+  <nav id="navigation "class="navbar navbar-expand-lg navbar-light bg-danger p-4">
+    <a class="navbar-brand" id="brandName" href="home.html">
+        <img src="logo.png" class="shadow-" width="75">
+        <label for="brandName" href="home.html" class="text-light text-shadow">Performance Solutions</label>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-center" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item p-1">
+          <a class="nav-link active" href="home.html">Home</a>
+        </li>
+        <li class="nav-item p-1">
+          <a class="nav-link" href="taskdashboard.html">TaskDashboard</a>
+        </li>
+        <li class="nav-item p-1">
+          <a class="nav-link" href="taskcreation.html">TaskCreater</a>
+        </li>
+        <li class="nav-item p-1">
+            <a href="login.html"><button class="btn btn-secondary btn-small">
+                Sign In
+            </button></a>
+        </li>
+        <li class="nav-item p-1">
+           <a href="register.html">
+           <button class="btn btn-dark btn-small"> Register </button>
+            </a> 
+        </li>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <h2 class="mb-4 text-center">Task Dashboard</h2>
+    <h4 class="mb-4 text-center">Monday</h4>
+    <div class="accordion" id="taskAccordion">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            <img src="taskdashboardimages/wakeup.jpg" class="img-fluid" alt="Task Image">
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#taskAccordion">
+          <div class="accordion-body text-center">
+            <strong>Wake Up</strong>
+            <br>
+            <strong>8:00AM</strong>
+            <br><br>
+            <form>
+                <div class="mb-3">
+                  <label for="sleepQuality" class="form-label">How did you sleep?</label>
+                  <select class="form-select" id="sleepQuality">
+                    <option selected>Select an option</option>
+                    <option value="1">Very Poor</option>
+                    <option value="2">Poor</option>
+                    <option value="3">Average</option>
+                    <option value="4">Good</option>
+                    <option value="5">Excellent</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-danger">Submit</button>
+              </form>
+          </div>
+        </div>
+      </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                <img src="taskdashboardimages/breakfast.jpg" class="img-fluid" alt="Task Image">
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#taskAccordion">
+              <div class="accordion-body text-center">
+                <strong>Breakfast</strong>
+                <br>
+                <strong>8:30AM</strong>
+                <br>
+                - 1 Dave's Killer Everything Bagel w/ Cream Cheese : <em>46g Carbs, 15g Protein, 15g Fat, 360 Calories  </em>
+                <br>
+                - 4 eggs w/ Mushrooms + Bell Peppers : <em>10g Carbs, 27g Protein, 20g Fat, 319 Calories </em>
+                <br>
+                - 1/2 apple : <em>12g carbs, 100 calories</em>
+                <br>
+                - Total : <em>68g Carbs, 42g Protein, 35g Fat, 779 Calories</em>
+                <br><br>
+                <form>
+                    <div class="mb-3">
+                      <label for="fullnessLevel" class="form-label">How full were you after eating?</label>
+                      <select class="form-select" id="fullnessLevel">
+                        <option selected>Select an option</option>
+                        <option value="1">Not Full at All</option>
+                        <option value="2">Slightly Full</option>
+                        <option value="3">Moderately Full</option>
+                        <option value="4">Very Full</option>
+                        <option value="5">Extremely Full</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                  </form>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                <img src="taskdashboardimages/work.jpg" class="img-fluid" alt="Task Image">
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#taskAccordion">
+              <div class="accordion-body text-center">
+                <strong>Work</strong>
+                <br>
+                <strong>9:00AM - 5:00PM</strong>
+              </div>
+            </div>
+          </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+            <img src="taskdashboardimages/lunch.jpg" class="img-fluid" alt="Task Image">
+          </button>
+        </h2>
+            <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#taskAccordion">
+            <div class="accordion-body text-center">
+                <strong>Lunch</strong>
+                <br>
+                <strong>1:00PM</strong>
+                <br>
+                - 1 Turkey Sandwich on Whole Wheat Bread with Avocado and Spinach : <em>45g Carbs, 28g Protein, 16g Fat, 400 Calories</em>
+                <br>
+                - 1 cup Greek Yogurt with Berries : <em>20g Carbs, 15g Protein, 5g Fat, 200 Calories</em>
+                <br>
+                - 1 small Banana : <em>23g Carbs, 1g Protein, 0g Fat, 90 Calories</em>
+                <br>
+                - Total : <em>88g Carbs, 44g Protein, 21g Fat, 690 Calories</em>
+                <br><br>
+                <form>
+                    <div class="mb-3">
+                      <label for="fullnessLevel" class="form-label">How full were you after eating?</label>
+                      <select class="form-select" id="fullnessLevel">
+                        <option selected>Select an option</option>
+                        <option value="1">Not Full at All</option>
+                        <option value="2">Slightly Full</option>
+                        <option value="3">Moderately Full</option>
+                        <option value="4">Very Full</option>
+                        <option value="5">Extremely Full</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                  </form>
+            </div>            
+        </div>
+
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                <img src="taskdashboardimages/proteinshake.jpg" class="img-fluid" alt="Task Image">
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse show" data-bs-parent="#taskAccordion">
+              <div class="accordion-body text-center">
+                <strong>Protein Shake</strong>
+                <br>
+                <strong>5:30PM</strong>
+                <br>
+                <em>10g Carbs, 40g Protein, 2g Fat, 300 Calories</em>
+              </div>
+              <br><br>
+                <form>
+                    <div class="mb-3">
+                      <label for="fullnessLevel" class="form-label text-center">How full were you after eating?</label>
+                      <select class="form-select" id="fullnessLevel">
+                        <option selected>Select an option</option>
+                        <option value="1">Not Full at All</option>
+                        <option value="2">Slightly Full</option>
+                        <option value="3">Moderately Full</option>
+                        <option value="4">Very Full</option>
+                        <option value="5">Extremely Full</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                  </form>
+            </div>
+          </div>
+      </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+            <img src="taskdashboardimages/legday.jpg" class="img-fluid" alt="Task Image">
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse show"data-bs-parent="#taskAccordion">
+          <div class="accordion-body text-center">
+            <strong>Leg Day</strong>
+            <br>
+            <strong>6:00PM-7:45PM</strong>
+            <br>
+            - Back Squats: <em>4 sets of 8 reps</em>
+            <br>
+            - Leg Press: <em>3 sets of 10 reps</em>
+            <br>
+            - Walking Lunges: <em>3 sets of 10 reps per leg</em>
+            <br>
+            - Leg Extensions: <em>3 sets of 12 reps</em>
+            <br>
+            - Calf Raises: <em>4 sets of 15 reps</em>
+          </div>
+          <br><br>
+          <form>
+            <div class="mb-4">
+              <label class="form-label">Back Squats Difficulty:</label>
+              <input type="range" class="form-range" id="backSquatsDifficulty" min="1" max="10" step="1">
+              <div class="slider-labels">
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="form-label">Leg Press Difficulty:</label>
+              <input type="range" class="form-range" id="legPressDifficulty" min="1" max="10" step="1">
+              <div class="slider-labels">
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="form-label">Walking Lunges Difficulty:</label>
+              <input type="range" class="form-range" id="walkingLungesDifficulty" min="1" max="10" step="1">
+              <div class="slider-labels">
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="form-label">Leg Extensions Difficulty:</label>
+              <input type="range" class="form-range" id="legExtensionsDifficulty" min="1" max="10" step="1">
+              <div class="slider-labels">
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="form-label">Calf Raises Difficulty:</label>
+              <input type="range" class="form-range" id="calfRaisesDifficulty" min="1" max="10" step="1">
+              <div class="slider-labels">
+              </div>
+            </div>
+      
+
+            <div class="mb-4">
+              <label class="form-label">Did you experience any pain?</label>
+              <select class="form-select" id="painExperience" aria-label="Pain Experience">
+                <option selected>Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="mb-4" id="painLocationContainer" style="display: none;">
+              <label class="form-label">If yes, where?</label>
+              <textarea class="form-control" id="painLocation" rows="3" placeholder="Describe the location of the pain..."></textarea>
+            </div>
+      
+            <button type="submit" class="btn btn-danger">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
+            <img src="taskdashboardimages/dinner.jpg" class="img-fluid" alt="Task Image">
+          </button>
+        </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse show"data-bs-parent="#taskAccordion">
+            <div class="accordion-body text-center">
+                <strong>Dinner</strong>
+                <br>
+                <strong>8:30PM</strong>
+                <br>
+                - 4 oz Grilled Chicken Breast with Quinoa and Steamed Broccoli: <em>40g Carbs, 30g Protein, 7g Fat, 350 Calories</em>
+                <br>
+                - 1 cup Mixed Green Salad with Olive Oil Dressing: <em>10g Carbs, 2g Protein, 14g Fat, 150 Calories</em>
+                <br>
+                - 1 medium Sweet Potato: <em>26g Carbs, 2g Protein, 0g Fat, 100 Calories</em>
+                <br>
+                - 1 scoop Whey Protein Shake: <em>3g Carbs, 20g Protein, 1g Fat, 100 Calories</em>
+                <br>
+                - Total: <em>79g Carbs, 54g Protein, 22g Fat, 700 Calories</em>
+            </div>           
+            <br><br>
+                <form>
+                    <div class="mb-3">
+                      <label for="fullnessLevel" class="form-label">How full were you after eating?</label>
+                      <select class="form-select" id="fullnessLevel">
+                        <option selected>Select an option</option>
+                        <option value="1">Not Full at All</option>
+                        <option value="2">Slightly Full</option>
+                        <option value="3">Moderately Full</option>
+                        <option value="4">Very Full</option>
+                        <option value="5">Extremely Full</option>
+                      </select>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                  </form> 
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight">
+                <img src="taskdashboardimages/sleep.jpg" class="img-fluid" alt="Task Image">
+              </button>
+            </h2>
+            <div id="collapseEight" class="accordion-collapse collapse show"data-bs-parent="#taskAccordion">
+              <div class="accordion-body text-center">
+                <strong>Sleep</strong>
+                <br>
+                <strong>10:00PM</strong>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+    <a href="taskcreation.html" class="btn btn-danger mt-4 d-flex justify-content-center ">Add New Task</a>
+  </div>
+  <script>
+    (function () {
+      'use strict';
+      var forms = document.querySelectorAll('.needs-validation');
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+    })();
+   </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <style>
+        .carousel-item {
+      position: relative;
+    }
+
+    .carousel-caption {
+      position: absolute;
+      top: 20px; 
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: white;
+
+      padding: 20px; 
+    }
+        .text-shadow {
+          text-shadow: 6px 6px 6px rgba(0, 0, 0, 1); 
+        }
+    </style>
+
+    <nav id="navigation "class="navbar navbar-expand-lg navbar-light bg-danger p-4">
+        <a class="navbar-brand" id="brandName" href="home.html">
+            <img src="logo.png" class="shadow-" width="75">
+            <label for="brandName" href="home.html" class="text-light text-shadow">Performance Solutions</label>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item p-1">
+              <a class="nav-link active" href="home.html">Home</a>
+            </li>
+            <li class="nav-item p-1">
+              <a class="nav-link" href="taskdashboard.html">TaskDashboard</a>
+            </li>
+            <li class="nav-item p-1">
+              <a class="nav-link" href="taskcreation.html">TaskCreater</a>
+            </li>
+            <li class="nav-item p-1">
+                <a href="login.html"><button class="btn btn-secondary btn-small">
+                    Sign In
+                </button></a>
+            </li>
+            <li class="nav-item p-1">
+               <a href="register.html">
+               <button class="btn btn-dark btn-small"> Register </button>
+                </a> 
+            </li>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- <h1 class="text-center mt-5">Track Your Performance</h1> -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="training.jpg" class="d-block w-100" alt="Train Smart">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-shadow">Train Smart</h5>
+              <p class="text-shadow">See your progress over time by tracking your exercise intensity and other details.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="food.jpg" class="d-block w-100" alt="Eat For Your Goals">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-shadow">Eat For Your Goals</h5>
+              <p class="text-shadow">Whether you are on a fat loss, maintenance, or muscle building diet, Performance Solutions helps you make informed decisions about your food.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="sleep.jpg" class="d-block w-100" alt="Sleep and Recover">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="text-shadow">Sleep and Recover</h5>
+              <p class="text-shadow">Creating a bedtime routine, taking note of your sleep quality, and creating a healthy circadian rhythm will help optimize your recovery.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="bg-dark">
+              <h2 class="text-center text-shadow text-light p-4">Track Your Performance</h2>
+        <article class="text-center text-shadow text-light p-3">
+            Are you looking for a way to streamline your health and fitness journey? Performance Solutions, the all-in-one task management app, is designed to revolutionize how you track and improve your exercise performance, food intake, and sleep patterns.
+You can effortlessly monitor your workouts with detailed performance metrics, helping you push your limits and achieve your fitness goals. Our intuitive food diary allows you to log your meals and nutritional intake, offering insights into your dietary habits to ensure you're fueling your body effectively. Additionally, our sleep tracker provides valuable data on your sleep quality, helping you establish healthier sleep routines.
+
+The sleek interface and user-friendly design make it easy to stay on top of your health goals. Customizable reminders and insightful analytics keep you motivated and informed every step of the way. Whether you're a fitness enthusiast or just starting your wellness journey, Performance Solutions is your ultimate companion for achieving a balanced and healthier lifestyle.
+
+Elevate your health management with Performance Solutions—where your well-being meets innovation. Download now and start your path to a better you!
+
+        </article>
+      </div>
+</body>
+</html>
